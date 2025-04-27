@@ -91,6 +91,17 @@ export async function getCurrentUser(): Promise<User | null> {
   }
 }
 
+export async function Logout() {
+  const cookieStore = await cookies();
+  cookieStore.set("session", "", {
+    maxAge: 0,
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    path: "/",
+    sameSite: "lax",
+  });
+}
+
 export async function isAuthenticated() {
   const user = await getCurrentUser();
   return !!user;
