@@ -69,7 +69,7 @@ Whether you’re a job seeker preparing for your dream role or an organization l
 ### 1️⃣ Clone and Install
 
 ```bash
-git clone https://github.com/rahul/interview_ai.git
+git clone https://github.com/rahul-17-11/interview_ai.git
 cd interview_ai
 bun install         # Or: npm install / yarn / pnpm install
 bun dev             # Or: npm run dev / yarn dev / pnpm dev
